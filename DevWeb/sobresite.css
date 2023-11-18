@@ -1,0 +1,190 @@
+/* Definições gerais */
+body {
+  background-image: linear-gradient(#00acee,#ffffff);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+  }
+  
+  /* Estilo do cabeçalho */
+  header {
+    background-color: #00acee;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header img {
+    float: right;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 10px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  nav a:hover{
+    color: silver;
+  }
+  
+  /* Estilo do formulário */
+  section {
+    padding: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #00acee;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Estilo das publicações */
+  #publicacoes {
+    margin-top: 20px;
+  }
+  
+  .publicacao {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .data {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  h2{
+    color: black;
+  }
+  
+footer{
+    text-align: center;
+    align-items: center;
+}
+/* conteudo */
+h3{
+  margin-left: 5%;
+  margin-top: 0px;
+}
+h3 {
+  font-family: Arial, sans-serif; /* Define a família de fontes */
+  font-size: 20px; /* Define o tamanho da fonte */
+  text-align: center; /* Centraliza o texto */
+  line-height: 1.3; /* Define o espaçamento entre as linhas */
+  color: #333; /* Define a cor do texto */
+}
+.pagina{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conteudo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  height: 60vh;
+  width: 100vh;
+}
+.imagem {
+  width: 500px; /* define a largura desejada */
+  height: auto; /* mantém a proporção da imagem */
+}
+.carrossel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.conteudo {
+  margin-top: 140px;
+  flex: 0 0 100%;
+  transition: transform 0.5s ease;
+  display: none;
+}
+
+.conteudo.ativo {
+  display: flex;
+}
+
+.imagem {
+  width: 100%;
+  height: auto;
+}
+
+#anterior,
+#proximo {
+  border: none;
+  color: black;
+  position: absolute;
+  top: 65%;
+  transform: translateY(-50%);
+  padding: 5px;
+  background-color: #ffffff00;
+  /*border: 1px solid rgb(0, 0, 0);*/
+  cursor: pointer;
+};
+.setas{
+  padding: 5px;
+  border: none;
+}
+.setas:hover{
+  background-color: #00000033;
+  border-radius: 9%;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+#anterior {
+  left: 100px;
+}
+
+#proximo {
+  right: 100px;
+}
+.imagem1 {
+  width: 60%;
+  height: auto;
+}
+.setas{
+  width: 50px;
+  height: auto;
+}
+
+footer{
+  text-align: center;
+  align-items: center;
+}

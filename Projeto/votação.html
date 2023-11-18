@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="votação.css">
+    <link rel="shortcut icon" href="Logotipo_IFET.svg" type="image/x-icon">
+    <title>Sistema de Votação</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="ifpi.png">
+                        <span class="title">SV - IFPI</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="telainicial.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="usuario.html">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <span class="title">Usuário</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="votação.html">
+                        <span class="icon"><ion-icon name="receipt-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Sessão de Votação</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="relatorios.html">
+                        <span class="icon"><ion-icon name="podium-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Relatórios</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="configurações.html">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Configurações</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="sair.html">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- main -->
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <!-- Pesquisar -->
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Pesquisar">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <!-- usuário -->
+                <div class="action">
+                    <div class="profile" onclick="MenuToggle()">
+                        <img src="imagens/hudson2.jpg">
+                    </div>
+                    <div class="menu">
+                        <h3>Hudaon S Madeira<br><span>Professor</span></h3>
+            
+                        <ul>
+                            <li>
+                                <img src="imagens/user.png"><a href="#">Meu perfil</a>
+                            </li>
+                            <li>
+                                <img src="imagens/edit.png"><a href="#">Editar</a>
+                            </li>
+                            <li>
+                                <img src="imagens/log-out.png"><a href="#">Sair</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div> 
+            </div>
+            
+            <!-- Informações do aluno -->
+            
+            <div class="slide-container swiper">
+                <h1>Turma 4101</h1>
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="imagens/aluno.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">André Sousa Lima</h2>
+                                <p class="description">
+                                    Curso - TDS<br>
+                                    Turma - 4101<br>
+                                    Turno - Manhã<br>
+                                    Ano - 1º<br>
+                                </p>
+                                <a id="botao" href="tela-votacao-02.html">Informações</a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="imagens/usuario01.png" alt="" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">Aluno</h2>
+                                <p class="description">
+                                    Curso - TDS<br>
+                                    Turma - 4101<br>
+                                    Turno - Manhã<br>
+                                    Ano - 1º<br>
+                                </p>
+                                <a id="botao" href="">Informações</a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="imagens/usuario01.png" alt="" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">Aluno</h2>
+                                <p class="description">
+                                    Curso - TDS<br>
+                                    Turma - 4101<br>
+                                    Turno - Manhã<br>
+                                    Ano - 1º<br>
+                                </p>
+                                <a id="botao" href="">Informações</a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="imagens/usuario01.png" alt="" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">Aluno</h2>
+                                <p class="description">
+                                    Curso - TDS<br>
+                                    Turma - 4101<br>
+                                    Turno - Manhã<br>
+                                    Ano - 1º<br>
+                                </p>
+                                <a id="botao" href="">Informações</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Turma 4102</h1>
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="imagens/aluna.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">Ana Julia Sousa</h2>
+                                <p class="description">
+                                    Curso - TDS<br>
+                                    Turma - 4102<br>
+                                    Turno - Manhã<br>
+                                    Ano - 1º<br>
+                                </p>
+                                <a id="botao" href="tela-votacao-02.html">Informações</a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="imagens/usuario01.png" alt="" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">Aluno</h2>
+                                <p class="description">
+                                    Curso - TDS<br>
+                                    Turma - 4102<br>
+                                    Turno - Manhã<br>
+                                    Ano - 1º<br>
+                                </p>
+                                <a id="botao" href="">Informações</a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="imagens/usuario01.png" alt="" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">Aluno</h2>
+                                <p class="description">
+                                    Curso - TDS<br>
+                                    Turma - 4102<br>
+                                    Turno - Manhã<br>
+                                    Ano - 1º<br>
+                                </p>
+                                <a id="botao" href="">Informações</a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="imagens/usuario01.png" alt="" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">Aluno</h2>
+                                <p class="description">
+                                    Curso - TDS<br>
+                                    Turma - 4102<br>
+                                    Turno - Manhã<br>
+                                    Ano - 1º<br>
+                                </p>
+                                <a id="botao" href="">Informações</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Turma 4103</h1>
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="imagens/aluna2.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">Carla Almeida</h2>
+                                <p class="description">
+                                    Curso - TDS<br>
+                                    Turma - 4103<br>
+                                    Turno - Manhã<br>
+                                    Ano - 1º<br>
+                                </p>
+                                <a id="botao" href="tela-votacao-02.html">Informações</a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="imagens/usuario01.png" alt="" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">Aluno</h2>
+                                <p class="description">
+                                    Curso - TDS<br>
+                                    Turma - 4103<br>
+                                    Turno - Manhã<br>
+                                    Ano - 1º<br>
+                                </p>
+                                <a id="botao" href="">Informações</a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="imagens/usuario01.png" alt="" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">Aluno</h2>
+                                <p class="description">
+                                    Curso - TDS<br>
+                                    Turma - 4103<br>
+                                    Turno - Manhã<br>
+                                    Ano - 1º<br>
+                                </p>
+                                <a id="botao" href="">Informações</a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+        
+                                <div class="card-image">
+                                    <img src="imagens/usuario01.png" alt="" class="card-img">
+                                </div>
+                            </div>
+        
+                            <div class="card-content">
+                                <h2 class="name">Aluno</h2>
+                                <p class="description">
+                                    Curso - TDS<br>
+                                    Turma - 4103<br>
+                                    Turno - Manhã<br>
+                                    Ano - 1º<br>
+                                </p>
+                                <a id="botao" href="">Informações</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/t-votacao.js"></script>
+    
+</body>
+</html>

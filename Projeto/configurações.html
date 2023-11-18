@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="configurações.css">
+    <link rel="shortcut icon" href="Logotipo_IFET.svg" type="image/x-icon">
+    <title>Configurações</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="ifpi.png">
+                        <span class="title">SV - IFPI</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="telainicial.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="usuario.html">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <span class="title">Usuário</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="votação.html">
+                        <span class="icon"><ion-icon name="receipt-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Sessão de Votação</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="relatorios.html">
+                        <span class="icon"><ion-icon name="podium-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Relatórios</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="configurações.html">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Configurações</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="sair.html">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- main -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <!-- Search -->
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Pesquisar">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <!-- userImg -->
+                <div class="user">
+                    <img src="imagens/hudson2.jpg">
+                </div>
+            </div>
+            
+        </div>    
+    </div>
+
+   <!-- main -->
+   <div class="main">
+    <div class="topbar">
+        <div class="toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+
+        <!-- Search -->
+        <div class="search">
+            <label>
+                <input type="text" placeholder="Pesquisar">
+                <ion-icon name="search-outline"></ion-icon>
+            </label>
+        </div>
+
+        <!-- usuário -->
+        <div class="action">
+            <div class="profile" onclick="MenuToggle()">
+                <img src="WhatsApp Image 2023-05-09 at 20.31.43.jpeg">
+            </div>
+        </div>
+    </div>  
+
+    <body>
+        <div class="container">
+            <div class="form-image">
+                <img src="assets/img//undraw_shopping_re_3wst.svg" alt="">
+            </div>
+            <div class="form">
+                <form action="#">
+                    <div class="form-header">
+                        <div class="title">
+                            <h1>Cadastrar Aluno</h1>
+                        </div>
+                       
+                    </div>
+    
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="firstname">Nome do Aluno(a)</label>
+                            <input id="firstname" type="text" name="firstname" placeholder="Digite o nome" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="lastname">Período</label>
+                            <input id="lastname" type="text" name="lastname" placeholder="Informe o período" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="email">Bimestre</label>
+                            <input id="email" type="email" name="email" placeholder="Está em qual bimestre" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="number">Turma</label>
+                            <input id="number" type="tel" name="number" placeholder="Número da turma" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="number">Turno</label>
+                            <input id="number" type="tel" name="number" placeholder="informe seu turno" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="password">Disciplinas Reprovadas</label>
+                            <input id="password" type="text" name="password" placeholder="Informe a disciplina que não atingiu a média" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="confirmPassword">Nota do Aluno(a)</label>
+                            <input id="confirmPassword" type="text" name="confirmPassword" placeholder="Informe a nota" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="number">Informações do Aluno(a)</label>
+                            <input id="number" type="tel" name="number" placeholder="Informe algo sobre esse aluno(a)" required>
+                        </div>
+    
+                    </div>
+    
+                    <div class="container">
+                        <!-- Resto do código... -->
+                        <div class="continue-button">
+                            <button id="cadastrarButton">Cadastrar</button>
+                        </div>
+                    </div>
+                
+                    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                    <script src="scripts/t-configuracao.js"></script>
+                
+                    <script>
+                        // Função para exibir a mensagem e limpar os campos
+                        function exibirMensagem() {
+                            alert("Aluno(a) cadastrado com sucesso!");
+                
+                            // Limpar os campos de entrada
+                            var inputs = document.querySelectorAll("input[type=text], input[type=email], input[type=tel]");
+                            inputs.forEach(function(input) {
+                                input.value = "";
+                            });
+                        }
+                
+                        // Adicionar evento de clique ao botão
+                        var cadastrarButton = document.getElementById("cadastrarButton");
+                        cadastrarButton.addEventListener("click", exibirMensagem);
+                    </script>
+                </form>
+            </div>
+        </div>
+    </body>
+    
+    
+
+
+
+<script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+<script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="scripts/t-configuracao.js"></script>
+
+
+
+</body>
+</html>

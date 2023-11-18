@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Logotipo_IFET.svg" type="image/x-icon">
+    <title>Sorteador</title>
+</head>
+<body>
+
+    <div class="card">
+        <div class="img">
+            <img src="Logo do InovaIFPI.png">
+        </div>
+        <div class="fields">
+            <div class="input-group">
+                <label for="tipoSorteio">Tipo de Sorteio</label><br>
+                <select id="tipoSorteio" onchange="verificarTipoSorteio()">
+                    <option value="brindes">Brindes</option>
+                    <option value="Carneiro">Carneiro</option>
+                </select>
+            </div>
+            <div class="input-group" id="totalResultadosGroup">
+                <label>Total de Resultados</label><br>
+                <input type="number" value="1" id="totalResultadosInput">
+            </div>
+            <div class="input-group">
+                <label>Menor Valor</label><br>
+                <input type="number" value="1" id="menorValorInput">
+            </div>
+            <div class="input-group">
+                <label>Maior Valor</label><br>
+                <input type="number" value="10" id="maiorValorInput">
+            </div>
+            <button onclick="sortear()" id="btn-submit">Sortear</button>
+        </div>
+    
+
+        <div class="results">
+            <h2>Resultado</h2>
+            <center>
+                <div class="results-values">
+                    <!-- <div class="result-value">12</div> -->
+                </div>
+                <div class="response">
+                    
+                </div>
+            </center>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+
+    </script>
+
+
+</body>
+</html>

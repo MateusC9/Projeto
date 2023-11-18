@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="telainicial.css">
+    <link rel="shortcut icon" href="Logotipo_IFET.svg" type="image/x-icon">
+    <title>Sistema de Votação IFPI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="ifpi.png">
+                        <span class="title">SV - IFPI</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="telainicial.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="usuario.html">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <span class="title">Usuário</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="votação.html">
+                        <span class="icon"><ion-icon name="receipt-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Sessão de Votação</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="relatorios.html">
+                        <span class="icon"><ion-icon name="podium-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Relatórios</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="configurações.html">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Configurações</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="sair.html">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- main -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <!-- Pesquisar -->
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Pesquisar">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <!-- usuário -->
+                <div class="action">
+                    <div class="profile" onclick="MenuToggle()">
+                        <img src="imagens/hudson2.jpg">
+                    </div>
+                    <div class="menu">
+                        <h3>Hudaon S Madeira<br><span>Professor</span></h3>
+            
+                        <ul>
+                            <li>
+                                <img src="imagens/user.png"><a href="#">Meu perfil</a>
+                            </li>
+                            <li>
+                                <img src="imagens/edit.png"><a href="#">Editar</a>
+                            </li>
+                            <li>
+                                <img src="imagens/log-out.png"><a href="#">Sair</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div> 
+            </div>
+            
+            <!-- Carrocel com informativos-->
+
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+        
+                    <div class="slide frist">
+                        <img src="conselh (2).jpg" alt="tela1">
+                    </div>
+                    <div class="slide">
+                        <img src="conselho-de-classe-1.jpg" alt="tela2">
+                    </div>
+                    <div class="slide">
+                        <img src="calss-pexel.jpg" alt="tela3">
+                    </div>
+                    <div class="slide">
+                        <img src="campus.jpg" alt="tela4">
+                    </div>
+            
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+        
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+
+            <!-- Informativos da tlea inicial -->
+            <div class="infor">
+                <h1>Conselho de classe</h1>
+                
+                <p>
+                    O Conselho de Classe do Instituto Federal de Educação, Ciência e Tecnologia do Piauí, 
+                    previsto na Organização Didática, constitui a instância responsável pelo acompanhamento
+                     do processo pedagógico e pela avaliação do desempenho escolardas turmas da Educação
+                     Profissional Técnica de Nível Médio, nas formas integrada, concomitante e subsequente.
+                </p>
+                <p>
+                    Tem funções consultiva e deliberativa pertinentes ao acompanhamento 
+                    do processo de ensino e aprendizagem, sendo instância de deliberação, avaliação, reflexão,
+                    discussão, decisão, ação e revisão da prática educativa.
+                </p>
+                <img src="conselho.jpg">
+            </div>
+        </div>    
+    </div>
+
+    <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/t-inicial.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Cadastrar.css">
+    <link rel="shortcut icon" href="Logotipo_IFET.svg" type="image/x-icon">
+    <title>Cadastrar Lanche</title>
+    <style>
+        .inline {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="content">
+                <div class="logo">
+                    <a href="IFome.html">
+                        <img src="./IFome sem fundo.png" alt="Cupcake">
+                    </a>
+                </div>
+
+                <div class="menu-toggle">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+
+            </div>
+
+        </header>
+
+        <section>
+            <h2>CADASTRE SEU LANCHE</h2>
+            <form>
+                <label for="nome">Nome do Vendedor:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+                <label for="turma">Produto a oferecer:</label>
+                <input type="text" id="turma" placeholder="Digite seu produto">
+
+                <label for="curso">Curso:</label>
+                <select id="curso">
+                    <option value="" selected disabled>Selecione o curso</option>
+                    <option value="Técnico em Edificações Integrado ao Ensino Médio">Técnico em Edificações Integrado ao
+                        Ensino Médio</option>
+                    <option value="Técnico em Eletromecânica Integrado ao Ensino Médio">Técnico em Eletromecânica
+                        Integrado ao Ensino Médio</option>
+                    <option value="Técnico em Informática Integrado ao Ensino Médio">Técnico em Informática Integrado ao
+                        Ensino Médio</option>
+                    <option value="Técnico em Meio Ambiente Integrado ao Ensino Médio">Técnico em Meio Ambiente
+                        Integrado ao Ensino Médio</option>
+                    <option value="Técnico Subsequente em Desenvolvimento de Sistemas">Técnico Subsequente em
+                        Desenvolvimento de Sistemas</option>
+                    <option value="Técnico Subsequente em Edificações">Técnico Subsequente em Edificações</option>
+                    <option value="Técnico Subsequente em Eletromecânica">Técnico Subsequente em Eletromecânica</option>
+                    <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+                    <option value="Ciências Biológicas">Ciências Biológicas</option>
+                    <option value="Matemática">Matemática</option>
+                </select>
+
+                <label for="sexualidade">Sexualidade:</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="homem" name="sexualidade" value="Homem">
+                        <label for="homem">Homem</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="mulher" name="sexualidade" value="Mulher">
+                        <label for="mulher">Mulher</label>
+                    </div>
+                </div>
+
+                <label for="mensagem">Contatos para gerar o link:</label>
+                <input type="text" id="mensagem" placeholder="Digite seu contato" inputmode="numeric">
+
+
+                <label for="foto">Envie sua foto:</label>
+                <input type="file" id="foto" accept="image/*">
+
+
+                <button type="button" onclick="exibirMensagem()">Cadastrar</button>
+            </form>
+
+        </section>
+
+        <div id="imagem-animada">
+            <img src="Logo-IFPI-Horizontal.png" alt="Imagem animada">
+        </div>
+
+        <footer>
+            <p>&copy; 2023 IFome. TodEs os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+        function exibirMensagem() {
+            var mensagem = document.getElementById("mensagem").value;
+            alert("Produto cadastrado com sucesso!");
+            document.getElementById("mensagem").value = "";
+            document.getElementById("nome").value = "";
+            document.getElementById("turma").value = "";
+            document.getElementById("curso").selectedIndex = 0;
+            document.getElementById("foto").value = "";
+            document.getElementById("homem").checked = false;
+            document.getElementById("mulher").checked = false;
+        }
+    </script>
+</body>
+
+</html>

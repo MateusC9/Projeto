@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Login Restaurante</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="">
+                <h1></h1>
+                </a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <!-- <li class="nav-item"><a href="#" class="nav-link">Reservar Mesa</a></li> -->
+                    <!-- <li class="nav-item"><a href="#" class="nav-link">Mesas Reservada</a></li> -->
+                </ul>
+            </div>
+            <div class="login-button">
+                <!-- <button><a href="login.html">Login</a></button> -->
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <!-- <li class="nav-item"><a href="#" class="nav-link">Reservar Mesa</a></li> -->
+                <!-- <li class="nav-item"><a href="#" class="nav-link">Mesas Reservada</a></li> -->
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="buttonsForm">
+            <div class="btnColor"></div>
+            <button id="btnSignin">Cliente</button>
+            <button id="btnSignup"> Restaurante</button>
+        </div>
+
+        <form id="signin">
+            <input type="text" placeholder="Nome" required />
+            <i class="fas fa-envelope iEmail"></i>
+            <input type="password" placeholder="Senha" required />
+            <i class="fas fa-lock iPassword"></i>
+            <input type="password" placeholder="Repetir Senha" required />
+            <i class="fas fa-lock iPassword"></i>
+            <div class="divCheck">
+                <input type="checkbox" required />
+                <span>Aceito entregar meus dados</span>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <form id="signup">
+            <input type="text" placeholder="Nome Do Restaurante" required />
+            <i class="fas fa-envelope iEmail"></i>
+            <input type="password" placeholder="Senha" required />
+            <i class="fas fa-lock iPassword"></i>
+            <input type="password" placeholder="Repetir Senha" required />
+            <i class="fas fa-lock iPassword2"></i>
+            <div class="divCheck">
+                <input type="checkbox" required />
+                <span>Aceito entregar meus dados</span>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

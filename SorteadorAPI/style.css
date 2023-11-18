@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./359791571_781552827146313_6618885060671319762_n.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: white;
+    padding: 24px;
+    min-width: 350px;
+    border-radius: 24px;
+}
+
+.card .input-group {
+    margin-top: 16px;
+}
+
+.card input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border-radius: 4px;
+    border: solid 1px #7f8c8d;
+}
+
+.card .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.card img {
+    width: 220px;
+    height: auto;
+    padding: 4px;
+}
+
+.card button {
+    background-color: #1abc9c;
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: crimson;
+}
+
+h2 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.results-values {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 320px;
+}
+
+.results-values .result-value {
+    background-color: #1abc9c;
+    color: white;
+    margin: 8px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 48px;
+    font-size: 16px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #16a085;
+    padding: 10px 20px; 
+    z-index: 999;
+}
+
+footer img {
+    width: 60px;
+    height: 60px;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos existentes ... */
+
+/* Adições para tornar o layout responsivo ... */
+
+
+/* Estilos existentes ... */
+
+/* Adições para tornar o layout responsivo */
+@media (max-width: 768px) {
+    body {
+        align-items: center;
+    }
+
+    .card {
+        min-width: auto;
+        width: 90%;
+    }
+
+    h1 {
+        text-align: center; /* Centraliza o título "Sorteador" */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .card img {
+        width: 180px;
+        padding: 8px;
+    }
+
+    .results-values .result-value {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 14px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between; /* Alinha o logo do Instagram à direita */
+        align-items: center; /* Centraliza verticalmente o conteúdo do rodapé */
+        padding: 8px 16px;
+    }
+
+    footer img {
+        width: 40px;
+        height: 40px;
+        margin-left: 8px; /* Adiciona uma margem para afastar o logo do Instagram */
+    }
+}
+
+/* Estilos existentes ... */
+.cliente{
+    text-align: center;
+    font-size: 1.3rem;
+    text-decoration: underline;
+    margin: 0px 0px 10px 0px;
+}
+
+.telefone{
+    text-align: center;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    margin: 0px 0px 10px 0px;
+}
+
+.vendedor{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.message {
+    font-size: 1.1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2s steps(15) infinite alternate,
+      blink 800ms steps(13) infinite normal;
+    border-right: 5px solid black;
+  }
+  @keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 70%;
+    }
+  }
+  @keyframes blink {
+    from {
+      border-color: black;
+    }
+    to {
+      border-color: transparent;
+    }
+  }
+
+  .fields {
+    text-align: center;
+    margin: 20px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border-radius: 4px;
+    border: solid 1px #7f8c8d;
+}
+
+.fields select {
+    background-color: white;
+}
