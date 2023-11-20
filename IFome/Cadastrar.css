@@ -58,8 +58,6 @@ h2{
     padding-bottom: 20px;
 }
 
-
-/* Estilo do formulário */
 section {
     padding: 20px;
 }
@@ -70,7 +68,6 @@ textarea {
     margin-bottom: 10px;
 }
 
-/* Estilo das publicações */
 #publicacoes {
     margin-top: 20px;
 }
@@ -145,7 +142,6 @@ button:hover {
 .inline {
     display: inline-block;
     margin-right: 10px;
-    /* Ajuste a margem conforme necessário */
 }
 
 .radio-group {
@@ -157,7 +153,6 @@ button:hover {
     margin-right: 30px;
 }
 
-/* Estilos para o campo de envio de foto */
 label[for="foto"] {
     font-size: 16px;
     margin-bottom: 10px;
@@ -197,22 +192,20 @@ form {
     margin-bottom: 20px; 
 }
 
-/* Estilos para telas menores, como celulares */
 @media (max-width: 768px) {
     .logo {
-        width: 80px; /* Reduzir o tamanho do logo para telas menores */
+        width: 80px;
     }
     menu-toggle {
-        display: block; /* Mostrar o menu-toggle em telas menores */
+        display: block;
     }
     menu-toggle div {
         width: 20px;
     }
 }
 
-/* Estilos para telas maiores, como notebooks e computadores */
 @media (min-width: 1024px) {
     .content {
-        height: 200px; /* Aumentar a altura do content para telas maiores */
+        height: 200px;
     }
 }
