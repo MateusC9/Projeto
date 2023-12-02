@@ -207,6 +207,7 @@ html {
     overflow: hidden;
     box-shadow: 0 0 2rem rgba(0, 0, 0, .2);
     transition: all .4s ease;
+    cursor: pointer;
 }
 
 .menu-container:hover {
