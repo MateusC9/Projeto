@@ -251,8 +251,6 @@ header {
 .itens-cardapio .info .pedir:hover {
     background-color: #fc4c35;
     color: rgb(255, 255, 255);
-
-
 }
 
 .modal {
@@ -278,7 +276,7 @@ header {
     z-index: 900;
 }
 
-.button{
+.id-button{
     width: 200px;
     height: 35px;
     margin-top: 0.5rem;
@@ -290,11 +288,75 @@ header {
     transition: all 200ms ease-in;
 }
 
-.button:hover{
+.id-button:hover{
     background-color: #fc4c35;
     color: rgb(255, 255, 255);
 }
 
 .modal p {
     margin: 10px 0;
+}
+
+.modal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    width: 48%; 
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: dimgray;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #1C1C1C;
+}
+
+.button.reserved {
+    background-color: #2ecc71; 
+    color: #fff; 
+}
+
+
+p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 18px;
+    color: #333; 
+    line-height: 1.6; 
+    margin: 10px 0; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #f8f8f8;
+    text-transform: uppercase;
+}
+
+
+.ib-button{
+    width: 200px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color: crimson;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: all 200ms ease-in;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ib-button:hover{
+    background-color: #fc4c35;
 }
