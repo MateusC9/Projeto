@@ -150,3 +150,151 @@ header {
         display: block;
     }
 }
+
+.cardapio {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./1702.m10.i304.n005.F.c06.551922376\ White\ doodle\ vegetables\ and\ fruits\ isolated\ on\ blackboard\ seamless\ vector\ pattern.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+}
+
+.cardapio h2 {
+    font-size: 5rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.itens-cardapio {
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 550px));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.itens-cardapio .info {
+    background-color: rgb(221, 221, 221);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.itens-cardapio .info h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color:crimson;
+    grid-template-columns: 150px 150px;
+    margin-left: 6rem;
+}
+
+.itens-cardapio .info h3 span{
+    font-size: 1.7rem;
+    color:#585858;
+    margin-left: 1.5rem;
+}
+
+.itens-cardapio .info h4 {
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px 150px;
+    margin-left: 6rem;
+}
+
+.itens-cardapio .info h4 span{
+    font-size: 1.0rem;
+    color:#585858;
+    margin-left: 1.5rem;
+}
+
+.itens-cardapio div {
+    background-color: #5e5252;
+    box-shadow: 0px 0px 4px 1px ;
+}
+
+.itens-cardapio img {
+    width: 100%;
+    height: 200px;
+}
+
+.itens-cardapio .info .pedir {
+    width: 200px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color: crimson;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: all 200ms ease-in;
+}
+
+.itens-cardapio .info .pedir:hover {
+    background-color: #fc4c35;
+    color: rgb(255, 255, 255);
+
+
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 900;
+}
+
+.button{
+    width: 200px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color: crimson;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: all 200ms ease-in;
+}
+
+.button:hover{
+    background-color: #fc4c35;
+    color: rgb(255, 255, 255);
+}
+
+.modal p {
+    margin: 10px 0;
+}

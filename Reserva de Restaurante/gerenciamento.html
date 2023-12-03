@@ -35,8 +35,8 @@
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="index.html" class="nav-link">Tela Inicial</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Reservar Mesa</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Gerenciamento</a></li>
+                <li class="nav-item"><a href="reservar.html" class="nav-link">Reservar Mesa</a></li>
+                <li class="nav-item"><a href="explorar.html" class="nav-link">Explorar</a></li>
             </ul>
 
             <div class="login-button">
@@ -44,6 +44,47 @@
             </div>
         </div>
     </header>
+    <section class="cardapio" id="cardapio">
+        <h2>Mesas Reservadas</h2>
+
+        <div class="itens-cardapio">
+            <div class="frango">
+                <img src="./unnamed-54.png" alt="frango">
+                <div class="info">
+                    <h3>Restaurante</h3>
+                    <h4>Propietário <span>Mateus C.</span></h4>
+                    <h4>mesas <span>06</span></h4>
+                    <h4>Funcionamento <span>16:30 ás 3:00</span></h4>
+                    <button class="button" onclick="openModal()">Mesas Reservadas</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="myModal">
+            <p>Mesa 01: Disponível</p>
+            <p>Mesa 02: Indisponível</p>
+            <p>Mesa 03: Disponível</p>
+            <p>Mesa 04: Disponível</p>
+            <p>Mesa 05: Indisponíve</p>
+            <p>Mesa 06: Disponível</p>
+            <button class="button" onclick="closeModal()">Fechar</button>
+        </div>
+
+        <div class="modal-overlay" id="modalOverlay"></div>
+
+        <script>
+            function openModal() {
+                document.getElementById('myModal').style.display = 'block';
+                document.getElementById('modalOverlay').style.display = 'block';
+            }
+
+            function closeModal() {
+                document.getElementById('myModal').style.display = 'none';
+                document.getElementById('modalOverlay').style.display = 'none';
+            }
+        </script>
+    </section>
+
     <script src="script.js"></script>
 </body>
 
