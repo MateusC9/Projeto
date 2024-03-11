@@ -109,66 +109,93 @@ function finishGame() {
 
 const questions = [
     {
-        question: "Marcos Aurélio sempre teve uma motivação afetiva com a Educação e depois de buscar parcerias, seguiu seu caminho juntos aos seus, família!  Onde em abril de 2003 começou a funcionar noturnamente o Impacto Pré-Vestibulares:",
+        question: "Qual dessas peças é responsável pelo armazenamento de dados da máquina?",
         answers: [
-            { text: "Colégio Sobral Neto", correct: false },
-            { text: "Colégio Fácil", correct: false },
-            { text: "SESC", correct: true },
-            { text: "Colégio Sagrado Coração de Jesus", correct: false }
+            { text: "Placa-Mãe (MB)", correct: false },
+            { text: "Processador (CPU)", correct: false },
+            { text: "Hard Disk (HD)", correct: true },
+            { text: "O gabinete", correct: false }
         ]
     },
     {
-        question: "O que significa a águia o símbolo do Colégio Impacto?",
+        question: "Na informática, existe um sistema de medidas que é medido em números e letras, baseando-se na afirmação, qual é considerada a alternativa correta que representa uma dessas medidas.",
         answers: [
-            { text: "Força", correct: false },
-            { text: "Visão", correct: false },
-            { text: "Persistência", correct: true },
-            { text: "Sutileza", correct: false }
+            { text: "10KG", correct: false },
+            { text: "U2", correct: false },
+            { text: "1GB", correct: true },
+            { text: "500HZ", correct: false }
         ]
     },
     {
-        question: "A Sede do Colégio Impacto era inicialmente: ",
+        question: "Qual desses Sistemas Operacionais é pertencente á Microsoft?",
         answers: [
-            { text: "Residência do Governador do Piauí", correct: true },
-            { text: "Centro Odontológico", correct: false },
-            { text: "SESC", correct: false },
-            { text: "Biblioteca", correct: false }
+            { text: "Windows", correct: true },
+            { text: "Mac", correct: false },
+            { text: "Linux", correct: false },
+            { text: "Android", correct: false }
         ]
     },
     {
-        question: 'Quando o Impacto Pré-Vestibulares se transformou em Colégio Impacto e Pré-Vestibulares?',
+        question: 'Qual destes SO é totalmente gratuito e é um dos mais usados pelos sistemas acadêmicos?',
         answers: [
-            { text: "2008", correct: false },
-            { text: "2007", correct: true },
-            { text: "2006", correct: false },
-            { text: "2005", correct: false }
+            { text: "Mac", correct: false },
+            { text: "Windows", correct: false },
+            { text: "Android", correct: false },
+            { text: "Linux", correct: true }
         ]
     },
     {
-        question: 'Qual foi o tema da primeira Semana Cultural do Colégio Impacto:',
+        question: 'O que é Hardware?',
         answers: [
-            { text: 'Brasil Mostra Sua Cara', correct: false },
-            { text: 'Piauí Terra Querida', correct: true },
-            { text: 'Amores de IMPACTO', correct: false },
-            { text: 'Décadas de IMPACTO', correct: false }
+            { text: 'Parte logica do computador', correct: false },
+            { text: 'Parte física do computador', correct: true },
+            { text: 'Disco do computador', correct: false },
+            { text: 'Aplicativo do computador', correct: false }
         ]
     },
     {
-        question: 'O Colégio Impacto tem uma relação muito forte com a preservação da nossa história e as aulas passeio que fazemos.Da qual delas criamos um vínculo anual:',
+        question: 'O que é internet?',
         answers: [
-            { text: 'Campo Maior e a Batalha do Genipapo', correct: false },
-            { text: 'Coronel José Dias com a Serra da Capivara', correct: true },
-            { text: 'Oeiras e a Luta pela Independência do Piauí', correct: false },
-            { text: 'Parnaíba com a Balaiada', correct: false }
+            { text: 'Correio eletrônico', correct: false },
+            { text: 'Uma rede local de computadores', correct: true },
+            { text: 'Uma conexão sem fio', correct: false },
+            { text: 'Uma ferramenta de maior Alcance', correct: false }
         ]
     },
     {
-        question: 'O Café Aula do Colégio Impacto e Pré-Vestibulares recebia estudantes em caravanas do Piauí e Maranhão com mais de 1.500 alunos. Em que ano o Colégio Impacto obteve o maior índice de aprovação no Piauí?',
+        question: 'O que são Dados?',
         answers: [
-            { text: '2009', correct: true },
-            { text: '2010', correct: false },
-            { text: '2011', correct: false },
-            { text: '2012', correct: false },
+            { text: 'São as partes de programas', correct: true },
+            { text: 'são resquícios de arquivos corrompidos', correct: false },
+            { text: 'são informações desencontradas', correct: false },
+            { text: 'São pentesters invasores', correct: false },
+        ]
+    },
+    {
+        question: 'Os princípios básicos da Segurança da Informação:',
+        answers: [
+            { text: 'Confidencialidade; não repúdio; disponibilidade; autenticidade', correct: false },
+            { text: 'Confidencialidade; integridade; disponibilidade; autenticidade', correct: true },
+            { text: 'Integridade; disponibilidade; autenticidade', correct: false },
+            { text: 'Confidencialidade; disponibilidade; autenticidade', correct: false },
+        ]
+    },
+    {
+        question: 'Como inserir um comentário dentro do HTML?',
+        answers: [
+            { text: '/* Comentário */', correct: false },
+            { text: '< Comentário >', correct: false },
+            { text: '<!-- Comentário -->', correct: true },
+            { text: '<! "Comentário">', correct: false },
+        ]
+    },
+    {
+        question: 'Onde as variáveis ficam armazenadas?',
+        answers: [
+            { text: 'Na memória ram do computador', correct: true },
+            { text: 'No programa/software', correct: false },
+            { text: 'No banco de dados', correct: false },
+            { text: 'No banco de dados e na memória ram', correct: false },
         ]
     },
     {
@@ -187,6 +214,33 @@ const questions = [
             { text: 'Revoluções que impactaram o mundo', correct: false },
             { text: 'Principais Artistas Romanos', correct: true },
             { text: 'Invenções tecnológicas que impactaram o mundo', correct: false },
+        ]
+    },
+    {
+        question: 'Qual desses temas NÃO foi tema da Semana Cultural?',
+        answers: [
+            { text: 'Décadas de IMPACTO', correct: false },
+            { text: 'Revoluções que impactaram o mundo', correct: false },
+            { text: 'Principais Artistas Romanos', correct: false },
+            { text: 'Invenções tecnológicas que impactaram o mundo', correct: true },
+        ]
+    },
+    {
+        question: 'Qual desses temas NÃO foi tema da Semana Cultural?',
+        answers: [
+            { text: 'Décadas de IMPACTO', correct: true },
+            { text: 'Revoluções que impactaram o mundo', correct: false },
+            { text: 'Principais Artistas Romanos', correct: false },
+            { text: 'Invenções tecnológicas que impactaram o mundo', correct: false },
+        ]
+    },
+    {
+        question: 'Qual desses temas NÃO foi tema da Semana Cultural?',
+        answers: [
+            { text: 'Décadas de IMPACTO', correct: false },
+            { text: 'Revoluções que impactaram o mundo', correct: false },
+            { text: 'Principais Artistas Romanos', correct: false },
+            { text: 'Invenções tecnológicas que impactaram o mundo', correct: true },
         ]
     },
 ]
