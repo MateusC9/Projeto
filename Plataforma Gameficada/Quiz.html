@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,12 +12,20 @@
 
   <title>Quiz JS</title>
 </head>
+
 <body>
+  <div id="js-tempo">
+    <div id="tempo">
+        00:00
+    </div>
+    <button onclick="togglePauseResume(this)" class="botao">Parar</button>
+</div>
+
   <div class="container">
     <div class="questions-container hide">
-        <div>
-            <img src="./Logotipo_IFET.svg">
-        </div>
+      <div>
+        <img src="./Logotipo_IFET.svg">
+      </div>
       <span class="question">Pergunta aqui?</span>
       <div class="answers-container">
         <button class="answer button">Resposta 1</button>
@@ -31,4 +40,5 @@
     </div>
   </div>
 </body>
+
 </html>

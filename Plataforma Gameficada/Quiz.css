@@ -137,3 +137,41 @@ body {
         width: 80%;
     }
 }
+
+#js-tempo {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo com transparência */
+    padding: 10px 0; /* Espaçamento interno superior e inferior */
+    z-index: 1000; /* Certifica-se de que o cronômetro esteja acima de outros elementos */
+}
+
+#tempo {
+    background-color: white;
+    color: black;
+    width: 100px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 10px; /* Adiciona algum espaço interno para melhor aparência */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+.botao {
+    background-color: crimson; /* Cor de fundo verde */
+    border: none;
+    color: white;
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px; /* Margem superior */
+    cursor: pointer;
+    border-radius: 5px; /* Borda arredondada */
+}
+
+.botao:hover {
+    background-color: #4CAF50; 
+}

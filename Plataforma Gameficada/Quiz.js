@@ -106,6 +106,43 @@ function finishGame() {
   `
 }
 
+var timer;
+var ele = document.getElementById('tempo');
+var isRunning = true;
+var sec = 0;
+var min = 0;
+
+(function(){
+    timer = setInterval(updateTime, 1000);
+})();
+
+function updateTime() {
+    sec++;
+    if (sec === 60) {
+        min++;
+        sec = 0;
+    }
+    ele.innerHTML = formatTime(min) + ':' + formatTime(sec);
+}
+
+function formatTime(time) {
+    return (time < 10) ? '0' + time : time;
+}
+
+function togglePauseResume(button) {
+    if (isRunning) {
+        clearInterval(timer);
+        isRunning = false;
+        button.innerHTML = "Retomar";
+        button.style.backgroundColor = "#4CAF50"; // Cor de fundo verde
+    } else {
+        timer = setInterval(updateTime, 1000);
+        isRunning = true;
+        button.innerHTML = "Parar";
+        button.style.backgroundColor = "crimson"; // Cor de fundo vermelha
+    }
+}
+
 
 const questions = [
     {
