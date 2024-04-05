@@ -171,7 +171,3 @@ body {
     cursor: pointer;
     border-radius: 5px; /* Borda arredondada */
 }
-
-.botao:hover {
-    background-color: #4CAF50; 
-}
