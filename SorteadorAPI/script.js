@@ -81,7 +81,7 @@ async function sortear() {
         elementoHTML.append(message);
         
         // Faz a requisição POST para a API
-        fetch("https://apiinova.onrender.com/", fetchOptions)
+        fetch("https://ithalo.pythonanywhere.com/", fetchOptions)
             .then(function(response) {
             if (!response.ok) {
                 const elementoHTML = document.querySelector('.response');
