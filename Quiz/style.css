@@ -84,6 +84,9 @@ body {
 
 .button:not(:disabled):hover {
     filter: brightness(0.8);
+    /* background-color: transparent; */
+    /* border: 2px solid #4863f7; */
+    /* color: #4863f7; */
 }
 
 /* Finish game */
