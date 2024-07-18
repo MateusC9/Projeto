@@ -10,6 +10,49 @@ body {
     height: 100vh;
 }
 
+.especialidades {
+    background-image: url("./fundo3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    z-index: 0;
+}
+
+.especialidades::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.portfolio {
+    background-image: url("./fundo3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    z-index: 0;
+}
+
+.portfolio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+
 .interface {
     max-width: 1280px;
     margin: 0 auto;
@@ -211,7 +254,10 @@ section.portfolio {
 }
 
 section.portfolio .flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
+    gap: 60px;
     margin-top: 60px;
 }
 
