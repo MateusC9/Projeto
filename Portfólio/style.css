@@ -69,7 +69,7 @@ h2.titulo {
 }
 
 h2.titulo span {
-    color: #00FF08;
+    color: #1E90FF;
 }
 
 header {
@@ -107,7 +107,8 @@ header nav ul li {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #00FF08;
+    background-color: #1E90FF;
+    color: #F5F5F5;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -115,7 +116,7 @@ header nav ul li {
 }
 
 button:hover {
-    box-shadow: 0px 0px 8px #00FF08;
+    box-shadow: 0px 0px 8px #1E90FF;
     transform: scale(1.05);
 }
 
@@ -146,7 +147,7 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site .txt-topo-site h1 span {
-    color: #00FF08;
+    color: #1E90FF;
 }
 
 .topo-do-site .txt-topo-site p {
@@ -194,7 +195,7 @@ section.especialidades .flex {
 
 .especialidades .especialidades-box i {
     font-size: 70px;
-    color: #00FF08;
+    color: #1E90FF;
 }
 
 .especialidades .especialidades-box h3 {
@@ -227,7 +228,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 span {
-    color: #00FF08;
+    color: #1E90FF;
     display: block;
 }
 
@@ -241,7 +242,8 @@ section.sobre .flex {
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #00FF08;
+    background-color: #1E90FF;
+    color: #F5F5F5;
     font-size: 22px;
     cursor: pointer;
     margin: 0 5px;
@@ -316,11 +318,11 @@ footer .line-footer {
 }
 
 .borda {
-    border-top: 2px solid #00FF08;
+    border-top: 2px solid #1E90FF;
 }
 
 footer .line-footer p i {
-    color: #00FF08;
+    color: #1E90FF;
     font-size: 22px;
 }
 
