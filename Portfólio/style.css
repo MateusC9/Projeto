@@ -334,6 +334,7 @@ footer .line-footer p a {
 .btn-abrir-menu i {
     color: #1E90FF;
     font-size: 40px;
+    cursor: pointer;
 }
 
 .menu-mobile {
@@ -363,6 +364,7 @@ footer .line-footer p a {
 .menu-mobile .btn-fechar i {
     color: #1E90FF;
     font-size: 45px;
+    cursor: pointer;
 }
 
 .menu-mobile nav ul {
