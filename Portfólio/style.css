@@ -52,7 +52,6 @@ body {
     z-index: -1;
 }
 
-
 .interface {
     max-width: 1280px;
     margin: 0 auto;
@@ -349,11 +348,11 @@ footer .line-footer p a {
     transition: .5s;
 }
 
-.menu-mobile.abrir-menu{
+.menu-mobile.abrir-menu {
     width: 70%;
 }
 
-.menu-mobile.abrir-menu ~ .overlay-menu{
+.menu-mobile.abrir-menu~.overlay-menu {
     display: block;
 }
 
@@ -379,12 +378,12 @@ footer .line-footer p a {
     display: block;
 }
 
-.menu-mobile nav ul li a:hover{
+.menu-mobile nav ul li a:hover {
     background-color: #1E90FF;
     /* color: black; */
 }
 
-.overlay-menu{
+.overlay-menu {
     background-color: #000000df;
     width: 100%;
     height: 100%;
@@ -395,8 +394,199 @@ footer .line-footer p a {
     display: none;
 }
 
-@media screen and (max-width: 1020px){
-    .flex{
+.experiencia {
+    padding: 80px 4%;
+    background-color: #000000df;
+    color: #F5F5F5;
+}
+
+.experiencia-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+    align-items: stretch;
+}
+
+.job-card {
+    background-color: #121212;
+    border: 1px solid #1E90FF33;
+    padding: 30px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.img-job img {
+    border-radius: 20px;
+    object-fit: cover;
+    height: auto;
+    max-height: 300px;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #1E90FF33;
+}
+
+.job-projeto {
+    background-color: #121212;
+    border: 1px solid #1E90FF33;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.job-projeto:hover {
+    box-shadow: 0 0 20px #1E90FF33;
+    transform: translateY(-5px);
+}
+
+.img-job img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.descricao-job {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.descricao-job h3 {
+    color: #1E90FF;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.descricao-job p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ddd;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.descricao-job a {
+    color: #1E90FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.descricao-job a:hover {
+    text-decoration: underline;
+}
+
+.destaque-comduza {
+    background-image: url("./fundo3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    z-index: 0;
+    color: white;
+    padding: 80px 4%;
+}
+
+.destaque-comduza::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.comduza-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.comduza-card {
+    background-color: #121212;
+    border: 1px solid #1E90FF33;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(30, 144, 255, 0.15);
+    overflow: hidden;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1100px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.comduza-card:hover {
+    box-shadow: 0 0 20px #1E90FF33;
+    transform: translateY(-5px);
+}
+
+.comduza-card .comduza-img {
+    text-align: center;
+}
+
+.comduza-card .comduza-img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(30, 144, 255, 0.2);
+    display: block;
+    margin: 0 auto;
+}
+
+.comduza-card .comduza-texto h3 {
+    font-size: 26px;
+    color: #1E90FF;
+    margin-bottom: 10px;
+}
+
+.comduza-card .comduza-texto h3 span {
+    color: #1E90FF;
+}
+
+.comduza-card .comduza-texto p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ddd;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.links-comduza {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+    justify-content: flex-start;
+}
+
+.links-comduza a {
+    color: #1E90FF;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.links-comduza a:hover {
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 1020px) {
+    .flex {
         flex-direction: column;
     }
 
@@ -409,7 +599,8 @@ footer .line-footer p a {
         gap: 40px;
     }
 
-    .menu-desktop , .btn-contato {
+    .menu-desktop,
+    .btn-contato {
         display: none;
     }
 
@@ -421,7 +612,7 @@ footer .line-footer p a {
         font-size: 30px;
     }
 
-    .topo-do-site .img-topo-site img{
+    .topo-do-site .img-topo-site img {
         width: 100%;
     }
 
@@ -457,7 +648,9 @@ footer .line-footer p a {
         flex-direction: column;
     }
 
-    .projeto1, .projeto2, .projeto3 {
+    .projeto1,
+    .projeto2,
+    .projeto3 {
         width: 100%;
         max-width: none;
         margin: 0 0 20px 0;
@@ -481,5 +674,84 @@ footer .line-footer p a {
 @media screen and (max-width: 1020px) {
     .btn-abrir-menu {
         display: block;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .experiencia-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .job-projeto {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .img-job img {
+        max-height: none;
+        border-radius: 0;
+    }
+
+    .descricao-job {
+        padding: 20px;
+    }
+
+    .descricao-job h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .descricao-job p {
+        font-size: 14.5px;
+        text-align: justify;
+    }
+
+    .descricao-job a {
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .destaque-comduza {
+        padding: 60px 6%;
+    }
+
+    .comduza-card {
+        padding: 20px;
+        border-radius: 15px;
+        gap: 15px;
+    }
+
+    .comduza-card .comduza-texto h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .comduza-card .comduza-texto p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .comduza-card .comduza-img img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .links-comduza {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .links-comduza a {
+        font-size: 14px;
     }
 }
